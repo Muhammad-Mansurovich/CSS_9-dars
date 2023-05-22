@@ -1,0 +1,94 @@
+/*
+:root{
+    --matnRangi: #db7093;
+    --font-rangi: #1e90ff;
+    --shrifti: 25px;
+    --rasm:url(../rasmlar/02.jpeg);
+    --takror: no-repeat;
+}
+body{
+    background-color: var(--font-rangi);
+    color: var(--matnRangi);
+    background-image: var(--rasm);
+    background-repeat: var(--takror);
+    font-size: var(--shrifti);
+}
+*/
+@font-face {
+    font-family: 'Poppins';
+    src: url("../fonts/Poppins/poppins-v5-latin_devanagari-regular.woff") format('woff'),
+url("../fonts/Poppins/poppins-v5-latin_devanagari-regular.woff2") format('woff2');
+}
+body{
+    font-family: Poppins,sans-serif;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 200px auto;
+}
+.row{
+    width: 100%;
+}
+.col{
+    width: 30%;
+    float: left;
+    display: block;
+    margin: 20px 15px;
+}
+.img-box{
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; /* cover, contain, fill */
+}
+.clear{
+    clear: both;
+}
+.text{
+    /*column-count: 3;*/
+    column-gap: 20px;
+    column-rule: 5px solid red;
+    column-width: 300px;
+}
+
+@media (min-width:240px) and (max-width: 570px) {
+.wrap{
+    width: 100%;
+    background-color: green;
+}
+
+}
+@media (min-width: 570px) and (max-width: 780px){
+    .wrap{
+        width: 100%;
+        background-color: blue;
+    }
+}
+@media (min-width: 780px) and (max-width: 990px){
+    .wrap{
+        width: 100%;
+        background-color: red;
+    }
+}
+@media (min-width: 990px) and (max-width: 1200px){
+    .wrap{
+        width: 100%;
+        background-color: darkcyan;
+    }
+}
+@media (min-width: 1200px){
+    .wrap{
+        width: 100%;
+        background-color: deepskyblue;
+    }
+}
+
+
+
+
